@@ -20,7 +20,7 @@ class MyApp(ShowBase):
 
         # Set up background with an image
         cm = CardMaker('background')
-        cm.setFrame(-15, 15, -12, 10)
+        cm.setFrame(-20, 20, -15, 15)
         self.background = self.render.attachNewNode(cm.generate())
         self.background.setPos(0, 10, -5)
         self.background.setBillboardAxis()  # Make it face the camera
@@ -30,7 +30,7 @@ class MyApp(ShowBase):
         self.background.setTexture(background_texture)
 
         # Initial camera setup
-        self.camera.setPos(0, -20, 10)
+        self.camera.setPos(5, -20, 10)
         self.camera.lookAt(0,0,0)
 
         # Add the task for rotating the panda
